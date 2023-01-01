@@ -1,0 +1,54 @@
+:root{
+    --grid_x: 4;
+    --gap: .5rem;
+}
+
+#container{
+    position: relative;
+
+    min-height: 50vh;
+    max-width: 75vw;
+
+    left: 3vw;
+
+    background-color: skyblue;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 125px));
+    grid-template-rows: repeat(auto-fill, minmax(30px, 125px));
+    grid-gap: var(--gap);
+    padding: var(--gap);
+
+}
+
+.cell{
+    background-color: gold;
+    background-image: linear-gradient( 45deg, transparent 70%, rgba(255, 255, 255, 0.74) 50%);
+    color: black;
+    font-size: large;
+    border: 2px solid black;
+
+    padding: var(--gap);
+
+    aspect-ratio: 1;
+
+    display: grid;
+    /* justify-content: right; */
+    align-items: center;
+
+    z-index: 0;
+    transition: transform .5s, filter .5s ease-in-out;
+    filter: grayscale(1);
+}
+
+.cell:nth-of-type(2){
+    background-color: yellowgreen;
+}
+
+.cell:hover{
+    z-index: 1;
+    transform: scale(1.4) rotate(360deg);
+    filter: grayscale(0);
+}
