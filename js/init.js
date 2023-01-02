@@ -23,14 +23,14 @@ function loadFiles(){
         link.rel = 'stylesheet';
         link.href = path;
         head.appendChild(link);
-        console.log(path, 'loaded!');
+        // console.log(path, 'loaded!');
     };
     for(file in jsFiles){
         const path = jsFiles[file];
         var script = document.createElement('script');
         script.src = path;
         document.body.appendChild(script);
-        console.log(path, 'loaded!');
+        // console.log(path, 'loaded!');
     };
 };
 
