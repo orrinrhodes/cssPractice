@@ -1,7 +1,7 @@
 var spiderCanvas = document.getElementById('spider');
 var ctx = spiderCanvas.getContext('2d');
 
-const width = 500;
+const width = 550;
 const height = 350;
 const offset = 150;
 
@@ -15,7 +15,7 @@ const plotText =(p)=>{
     ctx.font = '18px Courier New';
     ctx.fillText(
         `(${p.x},${p.y})`,
-        p.x+10,p.y
+        p.x+10,p.y-3,
     );
 }
 
