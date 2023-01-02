@@ -7,6 +7,7 @@ const cssFiles = {
 };
 const jsFiles = {
     manager: jsPath+'cellManager.js',
+    spider: jsPath+'spider.js',
 };
 
 // vanilla js has no access to file system ;((
