@@ -35,5 +35,6 @@ function loadFiles(){
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
+    console.log('content loaded.');
     loadFiles();
 });
